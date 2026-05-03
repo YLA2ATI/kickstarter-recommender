@@ -1,0 +1,41 @@
+{
+  "model": "xgboost_tabular",
+  "n_features": 52,
+  "best_iteration": 562,
+  "fit_time_seconds": 2.9296786785125732,
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "logloss",
+      "auc"
+    ],
+    "tree_method": "hist",
+    "device": "cuda",
+    "learning_rate": 0.05,
+    "max_depth": 8,
+    "min_child_weight": 5,
+    "subsample": 0.9,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 1.0,
+    "max_bin": 256,
+    "verbosity": 0,
+    "seed": 42
+  },
+  "test": {
+    "auroc": 0.8264004813050034,
+    "ap": 0.9177561726953999,
+    "brier": 0.13945379853248596,
+    "logloss": 0.4345923282080437,
+    "accuracy": 0.8025317753177532,
+    "confusion": [
+      [
+        12347,
+        14490
+      ],
+      [
+        4775,
+        65948
+      ]
+    ]
+  }
+}

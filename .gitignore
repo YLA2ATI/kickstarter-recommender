@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Large data artifacts (regenerable from raw input)
+data/*.parquet
+data/*.npz
+data/*.joblib
+data/*.pkl
+data/summary explanation for gpt or claude.txt
+
+# Model artifacts that are large or regenerable (keep XGBoost JSON models, exclude probas + sklearn joblibs)
+models/*.npy
+models/*.joblib
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

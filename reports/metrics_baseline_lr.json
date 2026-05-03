@@ -1,0 +1,131 @@
+{
+  "model": "logistic_regression_tabular",
+  "n_features": 52,
+  "fit_time_seconds": 0.5641381740570068,
+  "train": {
+    "auroc": 0.7701084574157724,
+    "ap": 0.8204098895737049,
+    "brier": 0.18435530521311502,
+    "logloss": 0.5488845620888279,
+    "accuracy": 0.7258286825638424
+  },
+  "test": {
+    "auroc": 0.772878919624721,
+    "ap": 0.8929670260637536,
+    "brier": 0.16466779189718467,
+    "logloss": 0.500383886170583,
+    "accuracy": 0.7616338663386634,
+    "confusion": [
+      [
+        9956,
+        16881
+      ],
+      [
+        6374,
+        64349
+      ]
+    ]
+  },
+  "top_coefficients": [
+    {
+      "feature": "trend_score",
+      "coef": -0.7442360317457986
+    },
+    {
+      "feature": "log_goal",
+      "coef": -0.5940925471958354
+    },
+    {
+      "feature": "has_video",
+      "coef": 0.38177983631956797
+    },
+    {
+      "feature": "has_trend",
+      "coef": -0.36498769963044353
+    },
+    {
+      "feature": "country_US",
+      "coef": 0.3145669341379374
+    },
+    {
+      "feature": "duration_days",
+      "coef": -0.3056587360632087
+    },
+    {
+      "feature": "category_name_Comics",
+      "coef": 0.2658536812504816
+    },
+    {
+      "feature": "category_name_Food",
+      "coef": -0.22731073616156383
+    },
+    {
+      "feature": "category_name_Games",
+      "coef": 0.21663668190248278
+    },
+    {
+      "feature": "country_HK",
+      "coef": 0.19623316645052394
+    },
+    {
+      "feature": "category_name_Design",
+      "coef": 0.18637071997058133
+    },
+    {
+      "feature": "category_name_Publishing",
+      "coef": 0.1835370139847923
+    },
+    {
+      "feature": "country_GB",
+      "coef": 0.17463574750829797
+    },
+    {
+      "feature": "category_name_Technology",
+      "coef": -0.17330477052514398
+    },
+    {
+      "feature": "category_name_Journalism",
+      "coef": -0.16032992922501937
+    },
+    {
+      "feature": "blurb_has_number",
+      "coef": 0.14575390695697207
+    },
+    {
+      "feature": "blurb_has_exclaim",
+      "coef": 0.13375095588193464
+    },
+    {
+      "feature": "country_JP",
+      "coef": 0.1324012180058888
+    },
+    {
+      "feature": "category_name_Crafts",
+      "coef": -0.13081208249950907
+    },
+    {
+      "feature": "country_CA",
+      "coef": 0.1228572888932829
+    },
+    {
+      "feature": "category_name_Music",
+      "coef": 0.1185988372463152
+    },
+    {
+      "feature": "category_name_Photography",
+      "coef": -0.10749290218903898
+    },
+    {
+      "feature": "blurb_readability",
+      "coef": -0.09760808307804032
+    },
+    {
+      "feature": "launch_dow",
+      "coef": -0.09314263089187307
+    },
+    {
+      "feature": "country_SE",
+      "coef": 0.08989919035823517
+    }
+  ]
+}

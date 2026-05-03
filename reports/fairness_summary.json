@@ -1,0 +1,20 @@
+{
+  "category_auroc_min_max": [
+    0.6884520135634549,
+    0.8988622628034162
+  ],
+  "category_base_rate_min_max": [
+    0.3144072036018009,
+    0.9501249190339595
+  ],
+  "country_auroc_min_max": [
+    0.7132242370632463,
+    0.9013093805512579
+  ],
+  "country_base_rate_min_max": [
+    0.5166666666666667,
+    0.9105069385443217
+  ],
+  "max_calibration_error_category": 0.09857157464041666,
+  "max_calibration_error_country": 0.12430343220505535
+}

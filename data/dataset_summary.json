@@ -1,0 +1,23 @@
+{
+  "rows_total_resolved": 334080,
+  "rows_train": 236520,
+  "rows_test": 97560,
+  "word_max_features": 1000000,
+  "word_vocab_size_actual": 381395,
+  "word_min_df": 2,
+  "word_max_df": 0.95,
+  "word_ngram_range": [
+    1,
+    2
+  ],
+  "char_max_features": 500000,
+  "char_vocab_size_actual": 214667,
+  "char_min_df": 5,
+  "char_max_df": 0.95,
+  "char_ngram_range": [
+    3,
+    5
+  ],
+  "numeric_feature_count": 54,
+  "full_feature_count": 596116
+}

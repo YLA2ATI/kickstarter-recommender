@@ -1,0 +1,59 @@
+{
+  "model": "xgboost_full",
+  "n_features": 596114,
+  "params": {
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "auc",
+      "logloss"
+    ],
+    "tree_method": "hist",
+    "device": "cuda",
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "min_child_weight": 5,
+    "subsample": 0.9,
+    "colsample_bytree": 0.3,
+    "reg_lambda": 1.0,
+    "max_bin": 64,
+    "verbosity": 1,
+    "seed": 42
+  },
+  "best_iteration": 1999,
+  "best_val_auc": 0.4235063584523908,
+  "fit_time_seconds": 454.77395462989807,
+  "val": {
+    "auroc": 0.877608225820763,
+    "ap": 0.9144116296325276,
+    "brier": 0.1368538737297058,
+    "logloss": 0.42350634901708,
+    "accuracy": 0.8031878910874345,
+    "confusion": [
+      [
+        6252,
+        2917
+      ],
+      [
+        1738,
+        12745
+      ]
+    ]
+  },
+  "test": {
+    "auroc": 0.8681030569746244,
+    "ap": 0.9373510806861584,
+    "brier": 0.12550967931747437,
+    "logloss": 0.3965825422207179,
+    "accuracy": 0.8221812218122181,
+    "confusion": [
+      [
+        12280,
+        14557
+      ],
+      [
+        2791,
+        67932
+      ]
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "window": "2010-2014",
+    "n_rows": 48657,
+    "base_rate": 0.6585075117660357,
+    "best_iteration": 307,
+    "auroc_own_holdout": 0.8025585822525096,
+    "auroc_forward_2022plus": 0.6424817601989332,
+    "transfer_gap": 0.16007682205357643
+  },
+  {
+    "window": "2015-2017",
+    "n_rows": 86272,
+    "base_rate": 0.47305035237388726,
+    "best_iteration": 331,
+    "auroc_own_holdout": 0.8084456141125278,
+    "auroc_forward_2022plus": 0.7610511316855644,
+    "transfer_gap": 0.047394482426963425
+  },
+  {
+    "window": "2018-2020",
+    "n_rows": 78847,
+    "base_rate": 0.6884091975598311,
+    "best_iteration": 451,
+    "auroc_own_holdout": 0.8550033119395684,
+    "auroc_forward_2022plus": 0.8147636764048576,
+    "transfer_gap": 0.04023963553471077
+  },
+  {
+    "window": "2021+",
+    "n_rows": 120090,
+    "base_rate": 0.7348488633524857,
+    "best_iteration": 590,
+    "auroc_own_holdout": 0.8650876149515282,
+    "auroc_forward_2022plus": 0.8922739979897851,
+    "transfer_gap": -0.027186383038256934
+  }
+]
