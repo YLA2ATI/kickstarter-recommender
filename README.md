@@ -19,6 +19,8 @@ with SHAP-explained creator recommendations.
 features ≈ +4.3 pts; **Google Trends adds ≈ 0** on test (val Δ ≈ +0.5 pts; not
 preserved on transfer to post-2022 set — a notable null result for the paper).
 
+![ROC curves on post-2022 test set](reports/roc_curves.png)
+
 ## Data leak we caught
 
 The original prep included two columns that broke the pre-launch use-case:
@@ -43,6 +45,22 @@ kickstarter_project/
   Dockerfile   # ships only the lightweight tabular model
   requirements.txt
 ```
+
+## Setup
+
+```bash
+git clone https://github.com/YLA2ATI/kickstarter-recommender.git
+cd kickstarter-recommender
+python -m venv venv
+# Windows:  venv\Scripts\activate
+# macOS/Linux: source venv/bin/activate
+pip install -r requirements.txt
+```
+
+The repo ships trained models and reports. Re-running the full pipeline below
+requires the raw WebRobots Kickstarter dump (not bundled — see "Honest limitations"
+for size). Without raw data you can still run the recommender (`src/recommend.py`)
+and the Streamlit demo, both of which only need `models/xgb_tabular.json`.
 
 ## Pipeline (run order)
 
@@ -112,6 +130,8 @@ AUROC vs 0.86 on its own holdout). Notable feature drift:
 - `has_video`: dominant feature 2010-2017 (gain 20-35k), drops to 10k by 2021+ — became table stakes.
 - `trend_score`: 0 gain pre-2018 (data unavailable), grows to 14k by 2021+.
 - `country_HK`: 0 gain pre-2018 → 12k by 2021+.
+
+![Temporal drift heatmap](reports/temporal_drift_heatmap.png)
 
 See `reports/temporal_drift_*.csv,png` and `reports/temporal_drift_summary.json`.
 
