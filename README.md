@@ -3,7 +3,7 @@
 A pre-launch success-probability prediction system for Kickstarter campaigns,
 with SHAP-explained creator recommendations.
 
-- **Live demo:** [huggingface.co/spaces/OD2004/kickstarter-recommender](https://huggingface.co/spaces/OD2004/kickstarter-recommender) *(private — collaborator access)*
+- **Live demo:** [huggingface.co/spaces/OD2004/OD](https://huggingface.co/spaces/OD2004/OD) *(private — collaborator access)*
 - **Presentation deck:** [`reports/kickstarter_presentation.pptx`](reports/kickstarter_presentation.pptx)
 
 ## Headline results (held-out test set, post-2022)
