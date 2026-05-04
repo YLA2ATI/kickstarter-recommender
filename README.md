@@ -3,6 +3,10 @@
 A pre-launch success-probability prediction system for Kickstarter campaigns,
 with SHAP-explained creator recommendations.
 
+- **Live demo:** [huggingface.co/spaces/OD2004/kickstarter-recommender](https://huggingface.co/spaces/OD2004/kickstarter-recommender) *(private — collaborator access)*
+- **Presentation deck:** [`reports/kickstarter_presentation.pptx`](reports/kickstarter_presentation.pptx)
+- **Speaker script:** [`reports/presentation_script.txt`](reports/presentation_script.txt)
+
 ## Headline results (held-out test set, post-2022)
 
 | model | features | test AUROC | test AP | brier | accuracy |
@@ -145,6 +149,9 @@ high-confidence misses, and correctly flagged risks.
 - **Per-group AUROC varies 0.69–0.90.** The model performs unevenly across
   category and country. See `reports/fairness_by_*.csv`.
 
-## What's not yet built
+## Future work
 
-- Cloud deployment (Dockerfile is ready; deploy target not chosen)
+- Per-category calibration (per-group AUROC spread of 0.69–0.90 means a single global threshold is the wrong call for some segments).
+- Re-test the Google Trends signal with a query-specific lookup rather than the generic one.
+- Causal layer — replace SHAP-based recommendations with an uplift model on near-duplicate campaign pairs that differ in only one feature.
+- Productionize a retraining cadence (≥ every 12 months given observed temporal drift).
