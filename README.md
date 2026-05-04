@@ -5,7 +5,6 @@ with SHAP-explained creator recommendations.
 
 - **Live demo:** [huggingface.co/spaces/OD2004/kickstarter-recommender](https://huggingface.co/spaces/OD2004/kickstarter-recommender) *(private — collaborator access)*
 - **Presentation deck:** [`reports/kickstarter_presentation.pptx`](reports/kickstarter_presentation.pptx)
-- **Speaker script:** [`reports/presentation_script.txt`](reports/presentation_script.txt)
 
 ## Headline results (held-out test set, post-2022)
 
